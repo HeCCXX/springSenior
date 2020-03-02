@@ -71,8 +71,6 @@ public class DemoApplicationTests {
               "}\n" +
               "}\n" +
               "}";
-
-
       Search search = new Search.Builder(json).addIndex("hgg").addType("message").build();
 
       try {
