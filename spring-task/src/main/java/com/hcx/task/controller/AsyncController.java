@@ -1,7 +1,9 @@
 package com.hcx.task.controller;
 
 import com.hcx.task.service.AsyncService;
+import com.hcx.task.service.ScheduleService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,9 +20,18 @@ public class AsyncController {
     @Autowired
     AsyncService asyncService;
 
+    @Autowired
+    ScheduleService scheduleService;
+
     @GetMapping("/hello")
     public String hello(){
         asyncService.hello();
+        return "success";
+    }
+
+    @GetMapping("/hello1")
+    public String helloSchedule(){
+        scheduleService.hello();
         return "success";
     }
 }
