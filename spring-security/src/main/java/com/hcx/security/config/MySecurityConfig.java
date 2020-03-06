@@ -13,7 +13,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
 /**
  * @ClassName MySecurityConfig
- * @Description TODO
+ * @Description 自定义security配置，自己定义授权规则
  * @Author 贺楚翔
  * @Date 2020-03-06 15:00
  * @Version 1.0
@@ -49,7 +49,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
         //点击注销会删除cookie
 
     }
-
+        //老版本1.5.10可以使用，新版本有密码编译问题
 //    @Override
 //    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 //        auth.inMemoryAuthentication()
