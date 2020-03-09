@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @ClassName TicketController
- * @Description TODO
+ * @Description ticket 控制类，调用ticket服务类
  * @Author 贺楚翔
  * @Date 2020-03-09 16:31
  * @Version 1.0

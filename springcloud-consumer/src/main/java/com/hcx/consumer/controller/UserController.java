@@ -7,7 +7,7 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * @ClassName UserController
- * @Description TODO
+ * @Description 用户controller类，通过restTemplate发送请求访问分布式服务
  * @Author 贺楚翔
  * @Date 2020-03-09 16:40
  * @Version 1.0
