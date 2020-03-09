@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @ClassName TicketServiceImpl
- * @Description TODO
+ * @Description 服务实现类，使用dubbo Service暴露服务
  * @Author 贺楚翔
  * @Date 2020-03-09 13:24
  * @Version 1.0
